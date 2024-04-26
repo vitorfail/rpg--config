@@ -232,11 +232,81 @@
     {        
         "nome":"Ataque Certeiro",
         "circulo":0,
-        "conj":["mago"],
+        "conj":["mago", "bardo"],
         "acao":1,
-        "alcance":36,
+        "alcance":9,
+        "con":true,
+        "tempo":10,
+        "descri": "Você estende sua mão e aponta o dedo para um alvo no alcance. Sua magia garante a você uma breve intuição sobre as defesas do alvo. No seu próximo turno, você terá vantagem na primeira jogada de ataque contra o alvo, considerando que essa magia não tenha acabado."
+    },
+    {        
+        "nome":"Ataque Visual",
+        "circulo":6,
+        "conj":["mago", "bruxo", "bardo"],
+        "acao":1,
+        "alcance":"1",
         "con":true,
         "tempo":60,
-        "descri": "Você mexe com os pesadelos de uma criatura que você possa ver, dentro do alcance, e cria uma manifestação ilusória dos seus medos mais profundos, visível apenas para a criatura. O alvo deve realizar um teste de resistência de Sabedoria. Se falhar na resistência, ele ficará amedrontado pela duração. No final de cada turno do alvo, antes da magia acabar, ele deve ser bem sucedido num teste de resistência de Sabedoria ou sofrerá 4d10 de dano psíquico. Se passar na resistência, a magia acaba. Em Níveis Superiores. Quando você conjurar essa magia usando um espaço de magia de 5° nível ou superior, o dano aumenta em 1d10 para cada nível do espaço acima do 4°."
+        "descri": "Pela duração da magia, seus olhos se tornam um vazio escuro imbuído com um poder terrível. Uma criatura a sua escolha dentro de 18 metros [60 feet] de você que você possa ver precisa ser bem sucedido em um teste de resistência de Sabedoria ou será afetado por um dos seguintes efeitos a sua escolha pela duração. Em cada um dos seus turnos até que a magia termine, você pode usar sua ação para mirar outra criatura, mas não pode mirar uma criatura novamente se ela foi vem sucedida em um teste de resistência contra este conjuração de ataque visual. Adormecer. O alvo cai inconsciente. Ele acorda se sofrer qualquer dano ou se outra criatura usar sua ação para sacudir o adormecido até acordá-lo. Apavorar. O alvo está amedrontado. Em cada um dos turnos dele, a criatura amedrontada deve realizar a ação de Disparada e se mover para longe de você pela rota segura mais curta disponível, a não ser que não haja lugar para se mover. Se o alvo se mover para um local a, pelo menos, 18 metros [60 feet] de distância de você onde ela não possa mais te ver, esse efeito termina. Adoecer. O alvo tem desvantagem nas jogadas de ataque e testes de habilidade. No final de cada um dos turnos dele, ele pode realizar outro teste de resistência de Sabedoria. Se for bem sucedido, o efeito termina."
+    },
+    {        
+        "nome":"Augúrio",
+        "circulo":2,
+        "conj":["clerigo"],
+        "acao":1,
+        "alcance":2,
+        "con":false,
+        "tempo":"infinite",
+        "descri": "Ao lançar varetas cravejados com gemas, rolar ossos de dragão, puxar cartas ornamentadas ou usar outro tipo de ferramenta de adivinhação, você recebe um pressagio de uma entidade de outro mundo, sobre os resultados de cursos de ação específicos que você planeja tomar nos próximos 30 minutos. O Mestre escolhe dentre os possíveis presságios a seguir: • Êxito, para resultados bons • Fracasso, para resultados maus • Êxito e fracasso, para resultados bons e maus • Nada, para resultados que não são especialmente bons ou ruins. A magia não leva em conta qualquer possível circunstancia que possa mudar o resultado, como a conjuração de magias adicionais ou a perda ou ganho de um companheiro. Se você conjurar a magia duas ou mais vezes antes de completar seu próximo descanso longo, existe uma chance cumulativa de 25 por cento de cada conjuração, depois da primeira que você fez, ter um resultado aleatório. O Mestre faz essa jogada secretamente."
+    },
+    {        
+        "nome":"Auxílio Divino",
+        "circulo":1,
+        "conj":["paladino"],
+        "acao":0.5,
+        "alcance":2,
+        "con":false,
+        "tempo":60,
+        "descri": "Sua oração fortalece você com radiação divina. Até o fim da magia, seus ataques com arma causam 1d4 de dano radiante extra ao atingirem."
+    },
+    {        
+        "nome":"Banimento",
+        "circulo":4,
+        "conj":["paladino", "bruxo", "mago", "clerigo"],
+        "acao":1,
+        "alcance":18,
+        "con":true,
+        "tempo":60,
+        "descri": "Você tenta enviar uma criatura que você pode ver dentro do alcance para outro plano de existência. O alvo precisa ser bem sucedido em um teste de resistência de Carisma ou será banido. Se o alvo for nativo do plano de existência que você está, você bane o alvo para um semiplano inofensivo. Enquanto estiver lá, a criatura estará incapacitada. Ela permanece lá até a magia acabar, a partir desse ponto, o alvo reaparece no espaço em que ela deixou ou no espaço desocupado mais próximo, se o espaço dela estiver ocupado. Se o alvo for nativo de um plano de existência diferente do que você está, o alvo é banido em um lampejo sutil, retornando para o seu plano natal. Se a magia acabar antes de 1 minuto se passar, o alvo reaparece no lugar em que estava ou no espaço desocupado mais próximo, se o espaço dela estiver ocupado. Do contrário, o alvo não retorna. Em Níveis Superiores. Quando você conjurar essa magia usando um espaço de magia de 5° nível ou superior, você pode afetar uma criatura adicional para cada nível do espaço acima do 4°."
+    },
+    {        
+        "nome":"Banquete De Heróis",
+        "circulo":6,
+        "conj":["druida", "clerigo"],
+        "acao":3,
+        "alcance":18,
+        "con":true,
+        "tempo":60,
+        "descri": "Você traz um grande banquete, incluindo comida e bebida magnificas. O banquete leva 1 hora para ser consumido e desaparece ao final desse tempo e os efeitos benéficos não se aplicam até essa hora terminar. Até doze criaturas podem participar do banquete. Uma criatura que participe do banquete ganha diversos benefícios. A criatura é curada de todas as doenças e venenos, torna-se imune a veneno e a ser amedrontada e faz todos os seus testes de resistência de Sabedoria com vantagem. Seu máximo de pontos de vida também aumenta em 2d10 e ela ganha a mesma quantidade de pontos de vida. Esses benefícios duram por 24 horas."
+    },
+    {        
+        "nome":"Barreira De Lâminas",
+        "circulo":6,
+        "conj":["clerigo"],
+        "acao":3,
+        "alcance":27,
+        "con":true,
+        "tempo":600,
+        "descri": "Você cria uma muralha vertical de lâminas giratórias, afiadas como navalhas, feitas de energia mágica. A muralha aparece dentro do alcance e permanece pela duração. Você pode fazer uma muralha reta de até 30 metros [100 feet] de comprimento por 6 metros de altura [20-foot-tall] e 1,5 metro [5 feet] de largura ou uma muralha anelar com até 18 metros [60 feet] de diâmetro, 6 metros de altura [20-foot-tall] e 1,5 metro [5 feet] de largura. A muralha confere três-quartos de cobertura a criaturas atrás dela e seu espaço é terreno difícil. Quando uma criatura entrar a área da muralha pela primeira vez em um turno, ou começar seu turno nela, a criatura deve realizar um teste de resistência de Destreza. Se falhar, a criatura sofrerá 6d10 de dano cortante. Em um sucesso, a criatura sofre metade desse dano."
+    },
+    {        
+        "nome":"Benção",
+        "circulo":1,
+        "conj":["paladino", "clerigo"],
+        "acao":1,
+        "alcance":9,
+        "con":true,
+        "tempo":60,
+        "descri": "Você abençoa até três criaturas, à sua escolha, dentro do alcance. Sempre que um alvo realizar uma jogada de ataque ou teste de resistência antes da magia acabar, o alvo pode jogar um d4 e adicionar o valor jogado ao ataque ou teste de resistência. Em Níveis Superiores. Quando você conjurar essa magia usando um espaço de magia de 2° nível ou superior, você pode afetar uma criatura adicional para cada nível do espaço acima do 1°."
     }
 ]
